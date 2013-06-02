@@ -1,0 +1,16 @@
+%h1 Job Results
+
+%table
+  %tr
+    %th Job
+    %th Company
+    %th Salary
+    %th Description
+  - @jobs.each do |job|
+    %tr
+      %td= job.name
+      %td= job.company
+      %td= job.salary
+      %td= job.description
+
+      

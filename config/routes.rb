@@ -1,4 +1,6 @@
 Hiredheroes::Application.routes.draw do
+  get "jobs/index"
+
   get "welcome/landing"
 
   # The priority is based upon order of creation:
@@ -8,6 +10,7 @@ Hiredheroes::Application.routes.draw do
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
   match 'welcome' => 'welcome#landing'
+  match 'jobs' => 'jobs#index'
 
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase

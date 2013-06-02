@@ -36,4 +36,9 @@ gem 'unicorn'
 
 # To use debugger
 # gem 'debugger'
+
+#use haml for display
 gem 'haml'
+
+#use nokogiri for xml
+gem 'nokogiri'

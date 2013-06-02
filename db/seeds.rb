@@ -20,3 +20,19 @@ moc_codes.each do |code|
     MocCode.create(moc_code: code[:moc_code], name: code[:name])
   end
 end 
+
+keywords = [{moc_code: '3D054', keyword: '"Computer Management"'},
+{moc_code: '62E3C', keyword: 'Computer Engineer'},
+{moc_code: '94F', keyword: '"IT Technician"'},
+{moc_code: '24A', keyword: 'Telecommunications Engineer'},
+{moc_code: '3500', keyword: 'Vehicle Mechanic'},
+{moc_code: '1978', keyword: 'Logistics'},
+{moc_code: '2829', keyword: 'Bookkeeper'}] 
+
+keywords.each do |keyword|
+  moc_code = MocCode.find_by_moc_code(keyword[:moc_code])
+  if moc_code.nil? then
+    moc_code = MocCode.create(moc_code: keyword[:moc_code])
+  end
+  moc_code.keywords.create(keyword: keyword[:keyword])
+end
