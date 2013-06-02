@@ -1,16 +1,18 @@
 %h1 Job Results
 
-%table
-  %tr
-    %th Job
-    %th Company
-    %th Salary
-    %th Description
-  - @jobs.each do |job|
+%table.table.table-hover
+  %thead
     %tr
-      %td= job.name
-      %td= job.company
-      %td= job.salary
-      %td= job.description
+      %th Job
+      %th Company
+      %th Salary
+      %th Description
+  %tbody
+    - @jobs.each do |job|
+      %tr
+        %td= job.name
+        %td= job.company
+        %td= job.salary
+        %td= job.description
 
       

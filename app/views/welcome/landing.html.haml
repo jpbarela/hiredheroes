@@ -1,9 +1,15 @@
 %h1 Hired Heroes
 %h2 Your Service, your skills, your job
 
-=form_tag '/jobs', :method => :get do
-  =label_tag "My military occupation code"
-  =select_tag "moc_code", options_from_collection_for_select(@moc_codes, "id", "moc_code_description")
-  =label_tag "My job zip code"
-  =text_field_tag "zip_code"
-  =submit_tag "Find my job"
+.center
+  =form_tag '/jobs', :method => :get, :class => "form-horizontal" do
+    .control-group
+      =label_tag "My military occupation code", nil, :class => "control-label"
+      .controls
+        =select_tag "moc_code", options_from_collection_for_select(@moc_codes, "id", "moc_code_description")
+    .control-group
+      =label_tag "My job zip code", nil, :class => "control-label"
+      .controls 
+        =text_field_tag "zip_code"
+    .control-group
+      =submit_tag "Find my job!", :class => "controls"
