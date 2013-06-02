@@ -2,6 +2,7 @@
 
 $text_blue : rgb(8, 68, 118);
 $navbar_blue : #084476;
+$link_color : #B41019;
 
 .navbar .brand {
   float: left;
@@ -16,6 +17,10 @@ $navbar_blue : #084476;
 
 .navbar-inner {
   background: $navbar_blue; 
+}
+
+a:hover { 
+  color : $link_color;
 }
 
 .content {

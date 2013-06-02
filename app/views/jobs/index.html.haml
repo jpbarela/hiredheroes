@@ -10,9 +10,7 @@
   %tbody
     - @jobs.each do |job|
       %tr
-        %td= job.name
+        %td= link_to job.name, job.detail_link
         %td= job.company
         %td= job.salary
         %td= job.description
-
-      
