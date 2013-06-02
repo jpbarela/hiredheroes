@@ -23,6 +23,19 @@ a:hover {
   color : $link_color;
 }
 
+.navbar .nav > li > a {
+    float: none;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    text-shadow: 0px;
+}
+
+.navbar .nav > li > a:hover { 
+  color : $link_color;
+  text-shadow: 0px;
+}
+
 .content {
   background-color: #eee;
   padding: 20px;

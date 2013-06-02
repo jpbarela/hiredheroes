@@ -44,3 +44,6 @@ gem 'nokogiri'
 
 #use twitterbootstrap
 gem 'bootstrap-sass'
+
+#use devise for user authentication
+gem 'devise'

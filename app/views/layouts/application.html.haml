@@ -11,16 +11,16 @@
   = yield(:head)
 
 %body
-  %header.navbar.navbar-fixed-top
-    %nav.navbar-inner
-      .container
+  .container
+    %header.navbar.navbar-fixed-top
+      %nav.navbar-inner
         = render 'layouts/navigation'
     
-    #main{:role => "main"}
-      .container
-        .content
-          .row
-            .span12
-              /= render 'layouts/messages'
-              = yield
-          %footer
+  #main{:role => "main"}
+    .container
+      .content
+        .row
+          .span12
+            /= render 'layouts/messages'
+            = yield
+        %footer
