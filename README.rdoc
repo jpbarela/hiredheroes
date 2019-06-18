@@ -1,3 +1,5 @@
+== This project is unmaintained and relies on Rails 3 which has major security vulnerabilities pleaase update Rails before signficantly changing the project.
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create
